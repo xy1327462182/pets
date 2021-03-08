@@ -1,13 +1,65 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class="page">
+
+  <!-- 轮播图 -->
+  <swiper 
+    indicator-dots="{{true}}"
+    autoplay="{{true}}" 
+    interval="3000"
+    class="carousel"
+  >
+    <block wx:for="{{swiperList}}" wx:key="id">
+      <swiper-item class="swiper_item">
+        <image  src="{{item.url}}" class="swiper_item_image"></image>
+      </swiper-item>
     </block>
+  </swiper>
+
+  <!-- 百科头条 -->
+  <view class="baike">
+    <view class="baike_title">百科头条</view>
+
+    <swiper 
+      vertical="true" 
+      autoplay="true" 
+      circular="true"
+      interval="2000"
+      class="baike_swiper"
+    >
+      <block wx:for="{{baikeNews}}" wx:key="id">
+        <swiper-item class="baike_item">
+          <text class="orange_tag">热门</text>
+          <view class="baike_item_title">
+            {{item.title}}
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <!-- 领养信息推荐 -->
+  <view class="recommend">
+    <view class="recommend_title">
+      领养信息
+    </view>
+
+    <view class="recommend_list">
+      <block wx:for="{{trends}}" wx:key="id">
+        <navigator class="trends_item">
+          <view class="trends_img_wrap">
+            <image src="{{item.images[0]}}" mode="widthFix" class="trends_image"></image>
+          </view>
+
+          <view class="trends_right_wrap">
+            <view class="trends_info_title">
+              <text class="iconfont icon-chongwu"></text>
+              {{item.title}}
+            </view>
+            <view class="trends_info_txt">{{item.info}}</view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+
   </view>
+
 </view>

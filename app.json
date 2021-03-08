@@ -1,13 +1,52 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/encyclopedia/encyclopedia",
+    "pages/release/release",
+    "pages/trends/trends",
+    "pages/user/user"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#fc7222",
+    "navigationBarTitleText": "宠物领养中心",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#222",
+    "selectedColor": "#fc7222",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/index_active.png"
+      },
+      {
+        "pagePath": "pages/encyclopedia/encyclopedia",
+        "text": "百科",
+        "iconPath": "static/tabbar/baike.png",
+        "selectedIconPath": "static/tabbar/baike_active.png"
+      },
+      {
+        "pagePath": "pages/release/release",
+        "text": "发布",
+        "iconPath": "static/tabbar/publish.png",
+        "selectedIconPath": "static/tabbar/publish_active.png"
+      },
+      {
+        "pagePath": "pages/trends/trends",
+        "text": "动态",
+        "iconPath": "static/tabbar/trends.png",
+        "selectedIconPath": "static/tabbar/trends_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/tabbar/user.png",
+        "selectedIconPath": "static/tabbar/user_active.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
