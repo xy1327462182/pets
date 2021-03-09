@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userInfo: {
+      nickname: '余生如歌',
+      sex:1,
+      avatar: 'https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1736447247,230581483&fm=11&gp=0.jpg'
+    }
   },
 
   /**

@@ -1,1 +1,78 @@
-/* pages/encyclopedia/encyclopedia.wxss */
+.page {
+  padding: 16rpx;
+}
+
+/* 推荐部分 */
+.recommend_wrap {
+  position: relative;
+  height: 350rpx;
+  border-radius: 14rpx;
+  overflow: hidden;
+}
+.recommend_title_wrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100rpx;
+  line-height: 90rpx;
+  background-image: linear-gradient(to top, rgb(0,0,0),rgba(0,0,0,0));
+  color: #fff;
+  font-size: 34rpx;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* 百科文章部分 */
+.baike_title {
+  font-weight: 700;
+  font-size: 34rpx;
+  margin: 50rpx 0 10rpx;
+}
+.baike_item {
+  width: 100%;
+  height: 240rpx;
+  border-bottom: 1rpx solid #ddd;
+  padding: 28rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.baike_img_wrap {
+  width: 240rpx;
+  height: 240rpx;
+  overflow: hidden;
+}
+.baike_msg_wrap {
+  width: 450rpx;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.baike_item_title {
+  font-size: 28rpx;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.baike_item_info {
+  color: #777;
+  font-size: 28rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.baike_item_time_wrap {
+  color: #555;
+  font-size: 26rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

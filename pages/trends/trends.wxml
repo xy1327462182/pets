@@ -1,2 +1,48 @@
-<!--pages/trends/trends.wxml-->
-<text>pages/trends/trends.wxml</text>
+<view class="page">
+  <view class="title">
+    <view class="title_txt">无偿领养</view>
+    <text class="title_line"></text>
+  </view>
+
+
+  <view class="trends_wrap">
+
+    <view 
+      class="trends_item"
+      wx:for="{{list}}"
+      wx:key="id"
+    >
+      <view class="user_wrap">
+        <view class="user_info_wrap">
+          <image class="user_avatar" src="{{item.avatar}}"></image>
+          <text class="iconfont icon-xingbienv" wx:if="{{item.gender==2}}"></text>
+          <text class="iconfont icon-xingbienan" wx:if="{{item.gender==1}}"></text>
+          <text class="username">{{item.username}}</text>
+        </view>
+        <view class="orange_tag" wx:if="{{!item.adopt}}">未领养</view>
+        <view class="orange_tag" wx:if="{{item.adopt}}">已领养</view>
+      </view>
+      <view class="content_wrap">{{item.content}}</view>
+      <view 
+        class="image_wrap" 
+      >
+        <view 
+          class="image_item_wrap"
+          wx:for="{{item.images}}"
+          wx:for-item="imageSrc"
+          wx:key="imageSrc"
+        >
+          <image class="image_item" mode="widthFix" src="{{imageSrc}}"></image>
+        </view>
+      </view>
+      <view class="date_wrap">
+        <view class="address_wrap">
+          <text class="iconfont icon-dizhidingweiweizhi"></text>
+          <text class="address_txt">{{item.address}}</text>
+          <text class="date_txt">{{item.date}}</text>
+        </view>
+        <text class="hits_txt">{{item.kits}}人浏览</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,1 +1,83 @@
-/* pages/user/user.wxss */
+.user_page {
+  background-color: #f1f1f1;
+  min-height: 100vh;
+}
+
+.user_info_wrap {
+  height: 380rpx;
+  background-color: #f8941e;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_avatar {
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.username {
+  margin-top: 20rpx;
+}
+.nickname {
+  color: #fff;
+  font-size: 32rpx;
+  margin-right: 8rpx;
+}
+.icon-xingbienv {
+  color: #ff3ec9;
+}
+.icon-xingbienan {
+  color: #75b9eb;
+}
+
+.user_list {
+  padding: 20rpx 0;
+}
+.list_item {
+  height: 90rpx;
+  background-color: #fff;
+  padding: 0 25rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list_item:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+.title_wrap {
+  display: flex;
+  align-items: center;
+}
+.title_wrap .iconfont {
+  color: #fc7222;
+  font-size: 42rpx;
+  margin-right: 20rpx;
+}
+.title_txt {
+  font-size: 28rpx;
+  color: #444;
+}
+.icon-jiantou {
+  color: #aaa;
+}
+
+
+.logout {
+  width: 500rpx;
+  height: 80rpx;
+  background-color: #ff0000;
+  border-radius: 35rpx;
+  margin-left: 125rpx;
+  margin-top: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 32rpx;
+  box-shadow: 1rpx 1rpx 1rpx rgba(0,0,0,.3);
+}

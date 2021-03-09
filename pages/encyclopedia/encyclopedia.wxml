@@ -1,2 +1,32 @@
-<!--pages/encyclopedia/encyclopedia.wxml-->
-<text>pages/encyclopedia/encyclopedia.wxml</text>
+<view class="page">
+  <!-- 百科推荐 -->
+  <view class="recommend_wrap">
+    <image class="recommend_img" mode="widthFix" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2396575955,1510657336&fm=26&gp=0.jpg"></image>
+    <view class="recommend_title_wrap">
+      猫猫总是掉毛怎么办？？听听宠物医生怎么说听听宠物医生怎么说听听宠物医生怎么说听听宠物医生怎么说听听宠物医生怎么说
+    </view>
+  </view>
+
+  <view class="baike_title">百科文章</view>
+
+  <view 
+    class="baike_item"
+    wx:for="{{list}}"
+    wx:key="id"  
+  >
+
+    <view class="baike_img_wrap">
+      <image class="baike_img" mode="widthFix" src="{{item.image}}"></image>
+    </view>
+
+    <view class="baike_msg_wrap">
+      <view class="baike_item_title">{{item.title}}</view>
+      <view class="baike_item_info">{{item.info}}</view>
+      <view class="baike_item_time_wrap">
+        <text class="time_txt">{{item.hits}}人浏览</text>
+        <text class="time_txt">{{item.date}}</text>
+      </view>
+    </view>
+
+  </view>
+</view>

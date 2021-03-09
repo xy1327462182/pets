@@ -38,7 +38,7 @@ Page({
       {
         id: '343d3434ssd',
         images: ['/static/trends/trend_test.jpg','/static/trends/trend_test.jpg','/static/trends/trend_test.jpg'],
-        title: '一个月大的金毛',
+        title: '一个月大的金毛两个月大的狗狗两个月大的狗狗两个月大的狗狗两个月大的狗狗',
         info: '在因为出差外出没法养，找一个好心人收养。',
       },
       {

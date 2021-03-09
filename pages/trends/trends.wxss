@@ -1,1 +1,102 @@
-/* pages/trends/trends.wxss */
+.page {
+  background-color: #f1f1f1;
+  min-height: 100vh;
+}
+
+.title {
+  width: 100%;
+  background-color: #fff;
+  height: 98rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.title_txt {
+  font-size: 34rpx;
+  font-weight: 700;
+}
+.title_line {
+  display: inline-block;
+  width: 80rpx;
+  height: 6rpx;
+  border-radius: 6rpx;
+  background-color: #fc7222;
+  margin-top: 20rpx;
+}
+
+/* 动态 */
+.trends_wrap {
+  padding: 25rpx;
+}
+.trends_item {
+  padding: 25rpx;
+  background-color: #fff;
+  border-radius: 18rpx;
+  margin-bottom: 30rpx;
+}
+.user_wrap {
+  height: 90rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_info_wrap {
+  display: flex;
+  align-items: center;
+}
+.user_avatar {
+  width: 90rpx;
+  height: 90rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.icon-xingbienv {
+  color: #ff3ec9;
+}
+.icon-xingbienan {
+  color: #75b9eb;
+}
+.username {
+  font-weight: 600;
+  font-size: 30rpx;
+  margin-left: 10rpx;
+}
+.content_wrap {
+  font-size: 30rpx;
+  color: #222;
+  margin: 16rpx 0;
+  text-indent: 2em;
+}
+
+.image_wrap {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.image_item_wrap {
+  width: 206rpx;
+  height: 206rpx;
+  overflow: hidden;
+  border-radius: 8rpx;
+  margin-bottom: 19rpx;
+}
+.image_item_wrap:nth-child(3n+2) {
+  margin-left: 19rpx;
+  margin-right: 19rpx;
+}
+.date_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 26rpx;
+  color: #888;
+}
+.date_wrap .iconfont {
+  font-size: 25rpx;
+}
+.address_txt {
+  margin-left: 8rpx;
+  margin-right: 16rpx;
+}

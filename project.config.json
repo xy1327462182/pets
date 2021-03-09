@@ -49,23 +49,35 @@
   "scripts": {},
   "isGameTourist": false,
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
+    "plugin": {
       "list": []
     },
     "game": {
-      "list": []
-    },
-    "plugin": {
       "list": []
     },
     "gamePlugin": {
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "list": [
+        {
+          "name": "百科页",
+          "pathName": "pages/encyclopedia/encyclopedia",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "动态页",
+          "pathName": "pages/trends/trends",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的页",
+          "pathName": "pages/user/user",
+          "scene": null
+        }
+      ]
     }
   }
 }
