@@ -1,2 +1,13 @@
-<!--pages/release/release.wxml-->
-<text>pages/release/release.wxml</text>
+<view class="publish_page">
+
+  <navigator class="publish_item">
+    <text class="iconfont icon-pets-copy"></text>
+    <text class="publish_txt">发布领养信息</text>
+  </navigator>
+
+  <navigator class="publish_item">
+    <text class="iconfont icon-fabu"></text>
+    <text class="publish_txt">发布百科文章</text>
+  </navigator>
+
+</view>
