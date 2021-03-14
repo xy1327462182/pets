@@ -1,0 +1,27 @@
+<!-- 百科详情页 -->
+
+<view class="page">
+
+  <!-- 标题 -->
+  <view class="title">中国高铁全生产链走出国门“第一单”</view>
+
+  <!-- 时间 -->
+  <view class="date_wrap">
+    <text class="author">余生如歌</text>
+    <text class="date_txt">2021/03/12 09:25</text>
+  </view>
+
+  <!-- 图片 -->
+  <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2396575955,1510657336&fm=26&gp=0.jpg" mode="widthFix" class="article_img"></image>
+
+  <!-- <editor bindinput="textareaInput">
+
+  </editor> -->
+
+
+  <rich-text class="article_content" nodes="{{content}}">
+  </rich-text>
+
+  <view class="article_hits">2342人浏览</view>
+
+</view>

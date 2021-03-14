@@ -1,11 +1,11 @@
 <view class="publish_page">
 
-  <navigator class="publish_item">
+  <navigator class="publish_item" url="/pages/release_adopt/release_adopt">
     <text class="iconfont icon-pets-copy"></text>
     <text class="publish_txt">发布领养信息</text>
   </navigator>
 
-  <navigator class="publish_item">
+  <navigator class="publish_item" url="/pages/release_encyclopedia/release_encyclopedia">
     <text class="iconfont icon-fabu"></text>
     <text class="publish_txt">发布百科文章</text>
   </navigator>

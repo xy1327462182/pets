@@ -1,0 +1,89 @@
+<view class="page">
+
+  <!-- 标题 -->
+  <view class="title">{{data.title}}</view>
+
+  <view class="orange_tag" wx:if="{{!data.adopt}}">未领养</view>
+  <view class="orange_tag" wx:if="{{data.adopt}}">已领养</view>
+
+  <view class="date_wrap">
+    <text class="hits_txt">浏览量：{{data.hits}}</text>
+    <text class="date_txt">更新时间：{{data.date}}</text>
+  </view>
+
+
+
+  <view class="item_msg_title_wrap">
+    <view class="line"></view>
+    <view class="msg_title">TA的照片</view>
+  </view>
+
+  <view class="imgs_wrap">
+    <image 
+      class="img_item"
+      mode="widthFix"
+      wx:for="{{data.images}}"
+      wx:key="id"
+      src="{{item}}"
+    ></image>
+  </view>
+
+
+
+  <view class="item_msg_title_wrap">
+    <view class="line"></view>
+    <view class="msg_title">TA的信息</view>
+  </view>
+
+  <view class="msg_content">{{data.content}}</view>
+
+
+
+
+  <view class="item_msg_title_wrap">
+    <view class="line"></view>
+    <view class="msg_title">送养人</view>
+  </view>
+
+  <view class="author_wrap">
+    <view class="user_info_wrap">
+      <image class="user_avatar" src="{{data.author.avatar}}"></image>
+      <text class="iconfont icon-xingbienv" wx:if="{{data.author.gender==2}}"></text>
+      <text class="iconfont icon-xingbienan" wx:if="{{data.author.gender==1}}"></text>
+      <text class="username">{{data.author.username}}</text>
+    </view>
+
+    <view class="author_contact_wrap">
+      <view class="contact_item">
+        <text class="iconfont icon-weixin"></text>
+        <text class="contact_txt">微信：zxc54344565345</text>
+      </view>
+      <view class="contact_item">
+        <text class="iconfont icon-jisuanqi"></text>
+        <text class="contact_txt">手机：156889796969</text>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class="item_msg_title_wrap">
+    <view class="line"></view>
+    <view class="msg_title">提醒</view>
+  </view>
+
+  <view class="wraning">
+    如果对方向您索要运费、治疗费等，切勿付款！请务必联系核实，谨防诈骗。
+  </view>
+
+
+  <view class="bottom">
+    <view class="home_wrap">
+      <text class="iconfont icon-home"></text>
+      <text class="home_txt">返回首页</text>
+    </view>
+
+    <view class="apply">申请领养</view>
+  </view>
+
+</view>

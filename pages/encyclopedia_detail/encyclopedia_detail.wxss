@@ -1,0 +1,33 @@
+.page {
+  padding: 35rpx 30rpx;
+}
+
+.title {
+  font-size: 50rpx;
+  font-weight: 550;
+  line-height: 66rpx;
+}
+
+.date_wrap {
+  color: #777;
+  font-size: 30rpx;
+  margin: 28rpx 0 50rpx;
+}
+.author {
+  margin-right: 30rpx;
+}
+
+.article_img {
+  margin-bottom: 50rpx;
+}
+p {
+  line-height: 40rpx;
+  text-indent: 2em;
+}
+
+.article_hits {
+  margin-top: 50rpx;
+  text-align: right;
+  color: #999;
+  font-size: 28rpx;
+}
