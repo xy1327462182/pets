@@ -4,7 +4,11 @@
     "pages/encyclopedia/encyclopedia",
     "pages/release/release",
     "pages/trends/trends",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/release_adopt/release_adopt",
+    "pages/release_encyclopedia/release_encyclopedia",
+    "pages/adopt_detail/adopt_detail",
+    "pages/encyclopedia_detail/encyclopedia_detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
